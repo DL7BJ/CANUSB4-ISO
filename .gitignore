@@ -1,0 +1,8 @@
+*.bak
+*.tmp
+*.log
+Private
+CAD/CANUSB4-backups
+CAD/fp-info-cache
+CAD/*-bak
+
