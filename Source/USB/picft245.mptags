@@ -1,0 +1,252 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+BDT	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	319;"	v	line:319
+BDT	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	321;"	v	line:321
+BDT	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	323;"	v	line:323
+BDT	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	325;"	v	line:325
+BaudRateGen	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	149;"	v	line:149
+BothEP0OutUOWNsSet	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	290;"	v	line:290
+CDAV::RB7	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	44;"	d	line:44
+CDCDataInHandle	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	145;"	v	line:145
+CDCDataOutHandle	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	144;"	v	line:144
+CDCInitEP	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	350;"	f	line:350	signature:(void)
+CDCNotificationHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	422;"	f	line:422	signature:(void)
+CDCNotificationHandler::{}	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	453;"	d	line:453	file:
+CDCNotificationInHandle	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	156;"	v	line:156
+CDCTxService	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	892;"	f	line:892	signature:(void)
+CDC_COMM_EP::2	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	73;"	d	line:73
+CDC_COMM_INTF_ID::0x0	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	72;"	d	line:72
+CDC_COMM_IN_EP_SIZE::8	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	74;"	d	line:74
+CDC_DATA_EP::3	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	77;"	d	line:77
+CDC_DATA_INTF_ID::0x01	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	76;"	d	line:76
+CDC_DATA_IN_EP_SIZE::32	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	79;"	d	line:79
+CDC_DATA_OUT_EP_SIZE::32	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	78;"	d	line:78
+CLOCK_FREQ::48000000	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	94;"	d	line:94
+CREQ::RB5	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	42;"	d	line:42
+C_IDLE::0	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	106;"	d	line:106	file:
+C_WAIT::1	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	107;"	d	line:107	file:
+CtrlTrfData	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	334;"	v	line:334
+DATA_PORT::PORTC	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	31;"	d	line:31
+DATA_PORTbits::PORTCbits	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	32;"	d	line:32
+GetSystemClock::CLOCK_FREQ	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	95;"	d	line:95
+HARDWARE_PROFILE_H	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	10;"	d	line:10
+HIGH_INT_VECT	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	147;"	f	line:147	signature:(void)
+InitializeSystem	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	109;"	p	line:109	file:	signature:(void)
+LastUSBIn	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	93;"	v	line:93
+NextUSBOut	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	91;"	v	line:91
+NextUSBOut	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	92;"	v	line:92
+OldSerialStateBitmap	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	155;"	v	line:155
+PORTA_DDR::0xFF	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	60;"	d	line:60
+PORTA_INIT::0x00	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	61;"	d	line:61
+PORTB_DDR::0b11000000	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	47;"	d	line:47
+PORTB_INIT::0b00000000	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	48;"	d	line:48
+PORTC_DDR::0b11111111	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	35;"	d	line:35
+PORTC_INIT::0b00000000	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	36;"	d	line:36
+ProcessIO	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	110;"	p	line:110	file:	signature:(void)
+RX_BUFFER_LENGTH::32	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	119;"	d	line:119	file:
+RemoteWakeup	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	286;"	v	line:286
+SerialStateBitmap	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	154;"	v	line:154
+SerialStatePacket	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	129;"	v	line:129
+SetupPkt	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	333;"	v	line:333
+UDAV::RB4	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	41;"	d	line:41
+UREQ::RB6	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	43;"	d	line:43
+USBActiveConfiguration	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	275;"	v	line:275
+USBAdvancePingPongBuffer::(buffer)((BYTE_VAL*)buffer)->V	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	444;"	d	line:444	file:
+USBAlternateInterface	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	276;"	v	line:276
+USBBusIsSuspended	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	287;"	v	line:287
+USBCBSendResume	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	114;"	p	line:114	file:	signature:(void)
+USBCDCEventHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	480;"	f	line:480	signature:(USB_EVENT event, void *pdata, WORD size)
+USBCDCSetLineCoding	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	173;"	p	line:173	file:	signature:(void)
+USBCFG_H	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	13;"	d	line:13
+USBCancelIO	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1311;"	f	line:1311	signature:(BYTE endpoint)
+USBCheckCDCRequest	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	203;"	f	line:203	signature:(void)
+USBCheckStdRequest	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2832;"	f	line:2832	file:	signature:(void)
+USBCheckStdRequest	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	394;"	p	line:394	file:	signature:(void)
+USBConfigureEndpoint	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1721;"	f	line:1721	file:	signature:(BYTE EPNum, BYTE direction)
+USBConfigureEndpoint	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	403;"	p	line:403	file:	signature:(BYTE EPNum, BYTE direction)
+USBCtrlEPAllowDataStage	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1668;"	f	line:1668	signature:(void)
+USBCtrlEPAllowStatusStage	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1598;"	f	line:1598	signature:(void)
+USBCtrlEPService	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2516;"	f	line:2516	file:	signature:(void)
+USBCtrlEPService	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	391;"	p	line:391	file:	signature:(void)
+USBCtrlEPServiceComplete	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1794;"	f	line:1794	file:	signature:(void)
+USBCtrlEPServiceComplete	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	396;"	p	line:396	file:	signature:(void)
+USBCtrlTrfInHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2741;"	f	line:2741	file:	signature:(void)
+USBCtrlTrfInHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	393;"	p	line:393	file:	signature:(void)
+USBCtrlTrfOutHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2688;"	f	line:2688	file:	signature:(void)
+USBCtrlTrfOutHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	402;"	p	line:402	file:	signature:(void)
+USBCtrlTrfRxService	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2027;"	f	line:2027	file:	signature:(void)
+USBCtrlTrfRxService	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	398;"	p	line:398	file:	signature:(void)
+USBCtrlTrfSetupHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2616;"	f	line:2616	file:	signature:(void)
+USBCtrlTrfSetupHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	392;"	p	line:392	file:	signature:(void)
+USBCtrlTrfTxService	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1946;"	f	line:1946	file:	signature:(void)
+USBCtrlTrfTxService	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	397;"	p	line:397	file:	signature:(void)
+USBDeferINDataStagePackets	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	297;"	v	line:297
+USBDeferOUTDataStagePackets	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	298;"	v	line:298
+USBDeferStatusStagePacket	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	294;"	v	line:294
+USBDeviceAttach	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1534;"	f	line:1534	signature:(void)
+USBDeviceDetach	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1429;"	f	line:1429	signature:(void)
+USBDeviceInit	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	476;"	f	line:476	signature:(void)
+USBDeviceState	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	274;"	v	line:274
+USBDeviceTasks	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	669;"	f	line:669	signature:(void)
+USBDeviceTasks	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	111;"	p	line:111	file:	signature:(void)
+USBEnableEndpoint	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1064;"	f	line:1064	signature:(BYTE ep, BYTE options)
+USBHALPingPongSetToEven::(buffer){((BYTE_VAL*)buffer)->	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	446;"	d	line:446	file:
+USBHALPingPongSetToOdd::(buffer){((BYTE_VAL*)buffer)->	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	445;"	d	line:445	file:
+USBStallEndpoint	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1258;"	f	line:1258	signature:(BYTE ep, BYTE dir)
+USBStallHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2349;"	f	line:2349	file:	signature:(void)
+USBStallHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	406;"	p	line:406	file:	signature:(void)
+USBStatusStageEnabledFlag1	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	295;"	v	line:295
+USBStatusStageEnabledFlag2	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	296;"	v	line:296
+USBStatusStageTimeoutCounter	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	293;"	v	line:293
+USBStdFeatureReqHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2900;"	f	line:2900	file:	signature:(void)
+USBStdFeatureReqHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	401;"	p	line:401	file:	signature:(void)
+USBStdGetDscHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2209;"	f	line:2209	file:	signature:(void)
+USBStdGetDscHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	395;"	p	line:395	file:	signature:(void)
+USBStdGetStatusHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2276;"	f	line:2276	signature:(void)
+USBStdGetStatusHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	400;"	p	line:400	file:	signature:(void)
+USBStdSetCfgHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2131;"	f	line:2131	signature:(void)
+USBStdSetCfgHandler	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	399;"	p	line:399	file:	signature:(void)
+USBSuspend	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2392;"	f	line:2392	file:	signature:(void)
+USBSuspend	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	405;"	p	line:405	file:	signature:(void)
+USBTransferOnePacket	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1181;"	f	line:1181	signature:(BYTE ep,BYTE dir,BYTE* data,BYTE len)
+USBWakeFromSuspend	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2449;"	f	line:2449	file:	signature:(void)
+USBWakeFromSuspend	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	404;"	p	line:404	file:	signature:(void)
+USB_BUS_SENSE	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	257;"	d	line:257	file:
+USB_BUS_SENSE::1	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	80;"	d	line:80
+USB_BUS_SENSE::1	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	258;"	d	line:258	file:
+USB_CDC_SET_LINE_CODING_HANDLER	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	169;"	p	line:169	file:
+USB_CDC_SUPPORT_ABSTRACT_CONTROL_MANAGEMENT_CAPABILITIES_D1::	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	82;"	d	line:82
+USB_CD_Ptr	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	254;"	v	line:254
+USB_ENABLE_ALL_HANDLERS	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	54;"	d	line:54
+USB_EP0_BUFF_SIZE::8	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	16;"	d	line:16
+USB_INTERRUPT	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	39;"	d	line:39
+USB_In_Buffer	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	89;"	v	line:89
+USB_In_Data_Rdy	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	95;"	v	line:95
+USB_MAX_EP_NUMBER::3	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	69;"	d	line:69
+USB_MAX_NUM_INT::2	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	23;"	d	line:23
+USB_NUM_STRING_DESCRIPTORS::3	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	51;"	d	line:51
+USB_Out_Buffer	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	88;"	v	line:88
+USB_PING_PONG_MODE::USB_PING_PONG__FULL_PING_PONG	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	36;"	d	line:36
+USB_PULLUP_OPTION::USB_PULLUP_ENABLE	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	42;"	d	line:42
+USB_SD_Ptr	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	259;"	v	line:259
+USB_SPEED_OPTION::USB_FULL_SPEED	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	47;"	d	line:47
+USB_SUPPORT_DEVICE	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	49;"	d	line:49
+USB_TRANSCEIVER_OPTION::USB_INTERNAL_TRANSCEIVER	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	45;"	d	line:45
+USB_USER_CONFIG_DESCRIPTOR::USB_CD_Ptr	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	33;"	d	line:33
+USB_USER_CONFIG_DESCRIPTOR_INCLUDE::externROMBYTE*ROMUSB_CD_Ptr[]	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	34;"	d	line:34
+USB_USER_DEVICE_DESCRIPTOR::&device_dsc	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	28;"	d	line:28
+USB_USER_DEVICE_DESCRIPTOR_INCLUDE::externROMUSB_DEVICE_DESCRIPTOR	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	29;"	d	line:29
+USB_USE_CDC	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_config.h	66;"	d	line:66
+USBcp	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	94;"	v	line:94
+USER_USB_CALLBACK_EVENT_HANDLER	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	388;"	p	line:388	file:	signature:(USB_EVENT event, void *pdata, WORD size)
+USTATcopy	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	288;"	v	line:288
+U_IDLE::0	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	100;"	d	line:100	file:
+U_OUT::2	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	102;"	d	line:102	file:
+U_RDY::1	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	101;"	d	line:101	file:
+UserInit	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	115;"	p	line:115	file:	signature:(void)
+YourHighPriorityISRCode	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	112;"	p	line:112	file:
+YourLowPriorityISRCode	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	113;"	p	line:113	file:
+_DTS_CHECKING_ENABLED::0	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	262;"	d	line:262	file:
+_DTS_CHECKING_ENABLED::_DTSEN	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	264;"	d	line:264	file:
+__USB_DESCRIPTORS_C	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	121;"	d	line:121	file:
+bDscType	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	238;"	m	line:238	file:
+bDscType	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	242;"	m	line:242	file:
+bDscType	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	248;"	m	line:248	file:
+bLength	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	238;"	m	line:238	file:
+bLength	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	242;"	m	line:242	file:
+bLength	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	248;"	m	line:248	file:
+byteToRead	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2029;"	l	line:2029
+byteToSend	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1948;"	l	line:1948
+byte_to_send	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	894;"	l	line:894
+can_in	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	104;"	v	line:104
+can_in_state	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	105;"	v	line:105
+cdc_data_rx	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	124;"	v	line:124
+cdc_data_tx	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	125;"	v	line:125
+cdc_mem_type	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	142;"	v	line:142
+cdc_notice	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	123;"	v	line:123
+cdc_rx_len	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	136;"	v	line:136
+cdc_trf_state	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	138;"	v	line:138
+cdc_tx_len	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	141;"	v	line:141
+configDescriptor1	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	152;"	v	line:152
+controlTransferState	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	282;"	v	line:282
+control_signal_bitmap	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	148;"	v	line:148
+current_ep_data	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2903;"	l	line:2903
+device_dsc	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	133;"	v	line:133
+dummy_encapsulated_cmd_response	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	166;"	v	line:166
+dummy_length::0x08	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	165;"	d	line:165	file:
+endpoint_number	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	289;"	v	line:289
+ep_data_in	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	291;"	v	line:291
+ep_data_out	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	292;"	v	line:292
+getsUSBUSART	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	541;"	f	line:541	signature:(char *buffer, BYTE len)
+handle	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1183;"	l	line:1183
+handle	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1723;"	l	line:1723
+hid_report_in	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	342;"	v	line:342
+hid_report_out	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	341;"	v	line:341
+i	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	895;"	l	line:895
+i	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2030;"	l	line:2030
+i	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2133;"	l	line:2133
+i	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	478;"	l	line:478
+i	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	679;"	l	line:679
+inPipes	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	283;"	v	line:283
+isr_high	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	128;"	f	line:128	signature:(void)
+isr_low	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	138;"	f	line:138	signature:(void)
+lastDTS	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2743;"	l	line:2743
+lastTransmission	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	96;"	v	line:96
+len	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	687;"	l	line:687
+len	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	784;"	l	line:784
+line_coding	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	126;"	v	line:126
+mGetLED_1::	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	101;"	d	line:101
+mGetLED_2::	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	102;"	d	line:102
+mLED_1	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	98;"	d	line:98
+mLED_1_Off::	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	107;"	d	line:107
+mLED_1_On::	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	104;"	d	line:104
+mLED_1_Toggle::	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	110;"	d	line:110
+mLED_2	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	99;"	d	line:99
+mLED_2_Off::	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	108;"	d	line:108
+mLED_2_On::	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	105;"	d	line:105
+mLED_2_Toggle::	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	111;"	d	line:111
+msd_buffer	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	354;"	v	line:354
+msd_cbw	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	347;"	v	line:347
+msd_csw	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	348;"	v	line:348
+outPipes	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	284;"	v	line:284
+p	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1066;"	l	line:1066
+p	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	1260;"	l	line:1260
+p	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2308;"	l	line:2308
+p	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2902;"	l	line:2902
+pBDTEntryEP0OutCurrent	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	277;"	v	line:277
+pBDTEntryEP0OutNext	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	278;"	v	line:278
+pBDTEntryIn	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	280;"	v	line:280
+pBDTEntryOut	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	279;"	v	line:279
+pCDCDst	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	140;"	v	line:140
+pCDCSrc	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	139;"	v	line:139
+pData	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	688;"	l	line:688
+pData	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	785;"	l	line:785
+pDst	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	285;"	v	line:285
+pFunc	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2088;"	p	line:2088	file:
+pFunc	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2803;"	p	line:2803	file:
+pUEP	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2905;"	l	line:2905
+pUEP	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2907;"	l	line:2907
+putUSBUSART	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	612;"	f	line:612	signature:(char *data, BYTE length)
+putrsUSBUSART	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	782;"	f	line:782	signature:(const ROM char *data)
+putsUSBUSART	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\CDC Device Driver\usb_function_cdc.c	685;"	f	line:685	signature:(char *data)
+sd000	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	238;"	v	line:238
+sd001	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	242;"	v	line:242
+sd002	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	248;"	v	line:248
+self_power::1	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\HardwareProfile.h	78;"	d	line:78
+setup_cnt	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	2545;"	l	line:2545
+shortPacketStatus	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\USB2.9e_cdc\USB\usb_device.c	281;"	v	line:281
+string	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	238;"	m	line:238	file:
+string	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	242;"	m	line:242	file:
+string	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\usb_descriptors.c	248;"	m	line:248	file:
+usbGetChar	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	116;"	p	line:116	file:	signature:(void)
+usbIsDataRdy	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	117;"	p	line:117	file:	signature:(void)
+usb_in	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	98;"	v	line:98
+usb_in_state	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	99;"	v	line:99
+usb_rx_buff	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	121;"	v	line:121
+usb_rx_ptr	E:\Projects\CBUS\mplab\canusb\merg_can_usb4\picft245\picft245.c	124;"	v	line:124
