@@ -1,8 +1,8 @@
    	TITLE		"Source for CAN-USB4 interface for CBUS"
 ; filename CAN_USB4.asm  15/09/14
-; 
+;
 ; Uses 4 MHz resonator and PLL for 16 MHz clock
-; This interface does not have a Node Number 
+; This interface does not have a Node Number
 
 
 
@@ -12,9 +12,9 @@
 ; Uses 'Gridconnect' protocol for USB
 ; Works with FTDI 245AM for now.
 
-;	
+;
 
-; added RUN LED switch on. 
+; added RUN LED switch on.
 ; no full diagnostics yet.
 
 
@@ -26,21 +26,21 @@
 ; Fixed CAN_ID at 7E to avoid conflict with CAN_RS
 ; RTR response removed. Avoids possibility of buffer overflow
 ; Allows true sniffer capability for checking self enum. of other modules.
-; FLiM should never have a CAN_ID of 7E 
+; FLiM should never have a CAN_ID of 7E
 
-; This version is based on the CAN_USBm code but changed for the 25K80 and 
+; This version is based on the CAN_USBm code but changed for the 25K80 and
 ; for use with the 14K50 as an altenative to Andrew's C code vrsion
-; Incorporates ECAN overflow and busy mechanism as in the CAN_CAN 
+; Incorporates ECAN overflow and busy mechanism as in the CAN_CAN
 ; Working with the 14K50 OK. 17/09/14
 
-;	
+;
 ; Assembly options
-	LIST	P=18F25K80,r=hex,N=75,C=120,T=ON
+	LIST	P=18F26K80,r=hex,N=75,C=120,T=ON
 
-	include		"p18f25K80.inc"
-	
+	include		"p18f26K80.inc"
+
 	;definitions  Change these to suit hardware.
-	
+
 #DEFINE CDAV	5
 #DEFINE	UREQ	4
 #DEFINE CREQ	1
@@ -48,14 +48,14 @@
 
 ;set config registers
 
-	;config for 18F25K80
+	;config for 18F26K80
 
 	CONFIG	FCMEN = OFF, FOSC = HS1, IESO = OFF, PLLCFG = ON
 	CONFIG	PWRTEN = ON, BOREN = SBORDIS, BORV=0, SOSCSEL = DIG
 	CONFIG	WDTEN = OFF,  WDTPS = 128 ;watchdog 512 mSec
 	CONFIG	MCLRE = ON, CANMX = PORTB
-	CONFIG	BBSIZ = BB1K 
-	
+	CONFIG	BBSIZ = BB1K
+
 	CONFIG	XINST = OFF,STVREN = ON,CP0 = OFF
 	CONFIG	CP1 = OFF, CPB = OFF, CPD = OFF,WRT0 = OFF,WRT1 = OFF, WRTB = OFF
 	CONFIG 	WRTC = OFF,WRTD = OFF, EBTR0 = OFF, EBTR1 = OFF, EBTRB = OFF
@@ -69,7 +69,7 @@
 
 ;****************************************************************
 ;	define RAM storage
-	
+
 	CBLOCK	0		;file registers - access bank
 					;interrupt stack for low priority
 					;hpint uses fast stack
@@ -79,9 +79,9 @@
 	PCH_tempH		;save PCH in hpint
 	PCH_tempL		;save PCH in lpint (if used)
 	Fsr_temp0L
-	Fsr_temp0H 
+	Fsr_temp0H
 	Fsr_temp1L
-	Fsr_temp1H 
+	Fsr_temp1H
 	Fsr_temp2L
 	Fsr_hold
 	Fsr_holx
@@ -90,10 +90,10 @@
 	CanID_tmp	;temp for CAN Node ID
 	IDtemph		;used in ID shuffle
 	IDtempl
-	
-	
-	
-	Datmode		;flag for data waiting 
+
+
+
+	Datmode		;flag for data waiting
 	Count		;counter for loading
 	Count1
 	Latcount	;latency counter
@@ -101,7 +101,7 @@
 	Temp		;temps
 	Temp1
 					;the above variables must be in access space (00 to 5F)
-					
+
 	Buffer		;temp buffer in access bank for data
 	RXbuf		;:0x1C	USB serial receive packet buffer
 	RXbuf1
@@ -129,15 +129,15 @@
 	RXbuf17
 	RXbuf18
 	RXbuf19
-	
-	
 
-	ENDC			;ends at 5F 
-	
 
-	
+
+	ENDC			;ends at 5F
+
+
+
 	CBLOCK	h'60'	;rest of bank 0
-	
+
 	Rx0con			;start of receive packet 0
 	Rx0sidh
 	Rx0sidl
@@ -152,9 +152,9 @@
 	Rx0d5
 	Rx0d6
 	Rx0d7
-	
-	
-	
+
+
+
 	Tx0con			;start of transmit frame  0
 	Tx0sidh
 	Tx0sidl
@@ -169,18 +169,18 @@
 	Tx0d5
 	Tx0d6
 	Tx0d7
-	
-	
-		
 
 
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
 	;add variables to suit
-	
+
 		;****************************************************************
 	;	used in ASCII to HEX and HEX to ASCII and decimal conversions
 	Abyte1		;first ascii char of a hex byte for ascii input
@@ -201,13 +201,13 @@
 	Datnum		;no. of data bytes in a received frame
 
 	;**************************************************************
-	
-	
-		
+
+
+
 	ENDC
-	
+
 	CBLOCK	0x100
-	
+
 	TXbuf		;USB transmit packet buffer to PC
 	TXbuf1
 	TXbuf2
@@ -222,7 +222,7 @@
 	TXbuf11
 	TXbuf12
 	TXbuf13
-	TXbuf14	
+	TXbuf14
 	TXbuf15
 	TXbuf16
 	TXbuf17
@@ -234,7 +234,7 @@
 	TXbuf23
 	TXbuf24
 	TXbuf25
-	
+
 	ENDC
 
 ;****************************************************************
@@ -248,16 +248,16 @@
 		ORG		0008h
 		goto	hpint			;high priority interrupt
 
-		ORG		0018h	
+		ORG		0018h
 		goto	lpint			;low priority interrupt
 
 
 ;*******************************************************************
 
 		ORG		0840h			;start of program
-;	
 ;
-;		high priority interrupt. 
+;
+;		high priority interrupt.
 
 hpint	nop
 		btfsc	PIR5,IRXIF			;a bus error?
@@ -265,32 +265,32 @@ hpint	nop
 		btfsc	PIR5,ERRIF
 		bra		err
 		bra		no_err
-err		
+err
 		bsf		CANCON,ABAT			;abort transmission
 		bcf		PIR5,ERRIF			;clear interrupts
 		bcf		PIR5,IRXIF
 		bcf		PIE5,ERRIF
-									
+
 		bcf		PIR5,IRXIF
 
 
 
 		retfie	1
 
-no_err	
+no_err
 		movlb	.15
 		btfss	PIR5,FIFOWMIF,0
 		bra		no_fifo
 		bcf		PIR5,FIFOWMIF,0		;clear FIFO flag
 		bcf		PIR5,4,0			;clear busy frame flag
 		bsf		TXB1CON,TXREQ		;send busy frame
-		bcf		PIE5,FIFOWMIE,0		;disable FIFO interrupt 
+		bcf		PIE5,FIFOWMIE,0		;disable FIFO interrupt
 		movlb	.14
 		bsf		TXBIE,TXB1IE		;enable IRQ for busy frame sent
 		bsf		PIE5,4,0			;enable IRQ for busy frame sent
 		movlb	0
 		retfie	1
-	
+
 no_fifo	bcf		PIR5,4,0			;clear busy frame flag
 		movlb	.14
 		bcf		TXBIE,TXB1IE		;no busy frame IRQ
@@ -301,7 +301,7 @@ no_fifo	bcf		PIR5,4,0			;clear busy frame flag
 
 
 
-	
+
 
 
 
@@ -313,14 +313,14 @@ no_fifo	bcf		PIR5,4,0			;clear busy frame flag
 ;
 ;
 ;		low priority interrupt. (if used)
-;	
+;
 
 lpint	retfie
 
-							
-				
-	
-								
+
+
+
+
 
 ;*********************************************************************
 
@@ -332,7 +332,7 @@ main	btfsc	COMSTAT,7			;fast loop for CAN detection
 		btfsc	PORTB,UDAV
 		bra		inusb
 		bra		main
-			
+
 ;		move incoming CAN frame to serial output buffer
 
 incan	movf	CANCON,W			;sort out ECAN buffer
@@ -349,7 +349,7 @@ incan	movf	CANCON,W			;sort out ECAN buffer
 incan1	movff	POSTINC0,POSTINC1		;save ECAN buffer
 		decfsz	Count
 		bra		incan1
-		bcf		RXB0CON,RXFUL		
+		bcf		RXB0CON,RXFUL
 		lfsr	FSR0,Rx0sidh
 		lfsr	FSR1,TXbuf		;start of serial string for PC
 		movlw	":"				;serial start
@@ -394,22 +394,22 @@ rtrset	movlw	"R"
 		bcf		Datnum,6		;Datnum now has just the number
 datbyte	tstfsz	Datnum
 		bra		datload
-		bra		back2			
+		bra		back2
 datload	movf	POSTINC0,W		;get byte
 		call	hexasc			;convert to acsii
 		movff	Hbyte1,POSTINC1
 		movff	Hbyte2,POSTINC1
 		decfsz	Datnum
-		bra		datload				
-back2	movlw	";"				
+		bra		datload
+back2	movlw	";"
 		movwf	POSTINC1
 		movf	FSR1L,W			;get last
 		movwf	Count1			;number of bytes to send
-		
+
 
 		lfsr	FSR1,TXbuf
 
-		
+
 			;set to output
 
 
@@ -419,28 +419,28 @@ usbwr	movlw	B'00000000'
 
 notwr1	btfsc	PORTB,CREQ		;CREQ must be lo to write to USB initially
 		bra		notwr1
-					
+
 
 notwr	bsf		PORTB,CDAV
 		btfss	PORTB,CREQ		;CREQ must be hi to write to USB
-		bra		notwr	
+		bra		notwr
 		movff	POSTINC1,PORTC	;output byte
 		nop						;settling time
 		nop
-			
+
 		bcf		PORTB,CDAV		;flag to USB
 		nop
 		nop
-	
+
 		decfsz	Count1
 		bra		notwr1
 		movlw	B'11111111'
 		movwf	TRISC			;back to inputs
 
-		
+
 
 endwr	bra		main
-		
+
 inusb	clrf	RXmode			;clear receive mode flags
 		movlw	B'11111111'
 		movwf	TRISC			;set to input
@@ -452,11 +452,11 @@ inusb1	btfsc	PORTB,UDAV		;is data
 		bra		inusb1
 		nop
 		bcf		PORTB,UREQ
-		
+
 		movlw	":"
 		subwf	PORTC,W
 		bnz		notin			;not start of frame
-	
+
 inusb2	btfss	PORTB,UDAV		;is data
 		bra		inusb2
 		bsf		PORTB,UREQ
@@ -464,7 +464,7 @@ inusb3	btfsc	PORTB,UDAV
 		bra		inusb3
 		nop
 		bcf		PORTB,UREQ
-		
+
 		movlw	"S"			;is it S (standard) or X (extended)
 		subwf	PORTC,W
 		bz		instd
@@ -478,7 +478,7 @@ inext	bsf		RXmode,3		;flag extended
 instart		clrf	RXnum		;byte counter
 		lfsr	FSR2,RXbuf		;set to start
 
-		
+
 inloop	btfss	PORTB,UDAV		;read all USB till end
 		bra		inloop
 		bsf		PORTB,UREQ		;can take
@@ -487,17 +487,17 @@ inloop1	btfsc	PORTB,UDAV		;data?
 		nop
 		bcf		PORTB,UREQ
 
-		
+
 		movlw	";"				;end?
 		subwf	PORTC,W
 		bz		lastin
 		movff	PORTC,POSTINC2  		;bug fix
 		bra		inloop
-		
-lastin	movff	PORTC,POSTINC2
-		
 
-		lfsr	FSR2,RXbuf		;point to serial receive buffer					
+lastin	movff	PORTC,POSTINC2
+
+
+		lfsr	FSR2,RXbuf		;point to serial receive buffer
 		lfsr	FSR1,Tx0sidh		;point to CAN TX buffer 1  - lowest priority
 txload	movff	POSTINC2,Abyte1
 		movff	POSTINC2,Abyte2
@@ -517,12 +517,12 @@ txload1	incf	FSR2L			;miss N or R
 		bra		txload2
 		incf	FSR1L			;miss out EIDH and EIDL if not extended
 		incf	FSR1L
-		
+
 txload2		movlw	";"
 		subwf	INDF2,W
 		bz		txdone
-		
-	
+
+
 
 txload4	movff	POSTINC2,Abyte1
 		movff	POSTINC2,Abyte2
@@ -540,43 +540,43 @@ txdone	movf	RXnum,W			;get number of data bytes
 		clrf	RXmode			;ready for next
 		movlw	.10
 		movwf	Latcount		;ten tries at low priority
-		call	sendTX0	
+		call	sendTX0
 
 notin	bcf		PORTB,UREQ		;clear
-		
+
 		goto	main
 
 
-		
-		
-		
-		
+
+
+
+
 ;***************************************************************************
 ;		main setup routine
 ;*************************************************************************
 
 setup	bcf		WDTCON,SWDTEN	;WDT off during reset
-		movlb	0	
+		movlb	0
 		clrf	INTCON			;no interrupts yet
 
 		movlb	.15
-	
+
 		clrf	ANCON0			;disable A/D
 		clrf	ANCON1
 		clrf	CM1CON
 		clrf	CM2CON
 		setf	WPUB			;pullups set
-		movlb	0	
-	
-		
+		movlb	0
+
+
 		;port settings will be hardware dependent. RB2 and RB3 are for CAN.
 		;set S_PORT and S_BIT to correspond to port used for setup.
 		;rest are hardware options
-		
-	
+
+
 		movlw	B'00100000'		;Port A outputs except reset pin
 		movwf	TRISA			;
-		movlw	B'00001011'		;RB0 is UDAV, RB1 is CREQ,  RB2 = CANTX, RB3 = CANRX, RB4 = UREQ, RB5 = CDAV 
+		movlw	B'00001011'		;RB0 is UDAV, RB1 is CREQ,  RB2 = CANTX, RB3 = CANRX, RB4 = UREQ, RB5 = CDAV
 								;RB6,7 for debug and ICSP and diagnostic LEDs
 		movwf	TRISB
 		clrf	PORTB
@@ -585,23 +585,23 @@ setup	bcf		WDTCON,SWDTEN	;WDT off during reset
 		bcf		PORTB,5			;USB read strobe
 		movlw	B'11111111'		;Port C  USB interface
 		movwf	TRISC
-		
+
 ;	next segment is essential.
-		
+
 		clrf	BSR				;set to bank 0
 		clrf	EECON1			;no accesses to program memory
 		bsf		CANCON,7		;CAN to config mode
 		movlw	B'10110000'
-		movwf	ECANCON			;CAN mode 2 
+		movwf	ECANCON			;CAN mode 2
 		bsf		ECANCON,5
 
 		movlb	.15
-	
+
 		clrf	RXB0CON
 		clrf	RXB1CON
 		bsf		TXB0CON,TXABT		;abort any pending messages
 		bsf		TXB1CON,TXABT
-	
+
 
 		movlb	.14
 
@@ -612,11 +612,11 @@ setup	bcf		WDTCON,SWDTEN	;WDT off during reset
 		clrf	B3CON
 		clrf	B4CON
 		clrf	B5CON
-		bcf		TXBIE,TXB1IE	;no interrupt on busy 
+		bcf		TXBIE,TXB1IE	;no interrupt on busy
 
-	
-	
-		movlw	B'00000011'		;set CAN bit rate at 125000 for now. 4 MHz 
+
+
+		movlw	B'00000011'		;set CAN bit rate at 125000 for now. 4 MHz
 		movwf	BRGCON1
 		movlw	B'10011110'		;set phase 1 etc
 		movwf	BRGCON2
@@ -625,14 +625,14 @@ setup	bcf		WDTCON,SWDTEN	;WDT off during reset
 		movlb	0
 
 		movlw	B'00100000'
-		movwf	CIOCON			;CAN to high when off		
+		movwf	CIOCON			;CAN to high when off
 
-		
+
 mskload	lfsr	FSR0,RXM0SIDH		;Clear masks, point to start
-mskloop	clrf	POSTINC0		
+mskloop	clrf	POSTINC0
 		cpfseq	FSR0L
 		bra		mskloop
-		
+
 		bcf		COMSTAT,RXB0OVFL	;clear overflow flags if set
 		bcf		COMSTAT,RXB1OVFL
 		clrf	PIR5			;clear all flags
@@ -644,10 +644,10 @@ mskloop	clrf	POSTINC0
 		clrf	PIE2
 		clrf	PIR5			;can FLAGS
 		clrf	EEADRH			;clear EEPROM Hi byte
-		
 
-		
-		movlw	B'10001000'		;Config TX1 buffer for busy frame 
+
+
+		movlw	B'10001000'		;Config TX1 buffer for busy frame
 		movwf	CANCON
 		movlb	.15				;buffer in bank 15
 		movlw	B'00000011'
@@ -661,7 +661,7 @@ mskloop	clrf	POSTINC0
 
 		movlw	3
 		movwf	Tx0con			;set transmit priority
-		
+
 		movlw	B'00100011'
 		movwf	IPR3			;high priority CAN RX and Tx error interrupts(for now)
 		clrf	IPR1			;all peripheral interrupts are low priority
@@ -673,7 +673,7 @@ mskloop	clrf	POSTINC0
 
 		clrf	PIR1
 		clrf	PIR2
-		
+
 		clrf	PIR5
 		movlw	B'10110001'
 		movwf	IPR5			;FIFOHWM and TXB are high priority
@@ -685,18 +685,18 @@ mskloop	clrf	POSTINC0
 		goto	main
 
 
-		
-;****************************************************************************
-;		start of subroutines		
 
-;*****************************************************************************	
-;		send a busy frame - already preloaded in TX0. 
-	
+;****************************************************************************
+;		start of subroutines
+
+;*****************************************************************************
+;		send a busy frame - already preloaded in TX0.
+
 sendTX1	movlb	.15				;set to bank 1
 		bsf		TXB1CON,TXREQ	;send immediately
-		movlb	0				;back to bank 0	
+		movlb	0				;back to bank 0
 		return
-;******************************************************************	
+;******************************************************************
 
 ;		Send contents of Tx1 buffer via CAN TXB1
 
@@ -704,7 +704,7 @@ sendTX0	movlb	.15				;check for buffer access
 tx_loop	btfsc	TXB0CON,TXREQ
 		bra	tx_loop
 		movlb	0
-	
+
 		lfsr	FSR0,Tx0con
 		lfsr	FSR1,TXB0CON
 ldTX0	movf	POSTINC0,W
@@ -713,17 +713,17 @@ ldTX0	movf	POSTINC0,W
 		cpfseq	FSR0L
 		bra		ldTX0
 
-	
+
 		movlb	.15				;bank 15
 tx0test	btfsc	TXB0CON,TXREQ	;test if clear to send
 		bra		tx0test
 		bsf		TXB0CON,TXREQ	;OK so send
-		
+
 tx1done	movlb	0				;bank 0
 		return					;successful send
 
-		
-		
+
+
 ;************************************************************************
 
 
@@ -776,10 +776,10 @@ hinib	movf	Abyte1,W
 hexend	movf	Abyte2,W
 		iorwf	Hexcon,W
 		return
-	
+
 ;
 
-		
-;************************************************************************		
+
+;************************************************************************
 
 		end

@@ -6,3 +6,7 @@ CAD/CANUSB4-backups
 CAD/fp-info-cache
 CAD/*-bak
 
+/CAN/CANUSB4-ISO-CAN.X/build/
+/CAN/CANUSB4-ISO-CAN.X/dist/
+/USB/build/
+/USB/dist/
